@@ -84,16 +84,15 @@ function isPallindrome(stringCheck) {
 }
 
 function checkCombinations(dd, mm, yyyy) {
-    //yyyymmdd format string
     const format1 = yyyy + mm + dd;
 
     //ddmmyyyy format string
     const format2 = dd + mm + yyyy;
 
-    //mmddyy format string
+    
     const format3 = mm + dd + yyyy.substring(2);
 
-    //mddyyyy format string
+    
     const format4 = Number(mm) + dd + yyyy;
 
     if (isPallindrome(format1)) {
